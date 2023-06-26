@@ -73,7 +73,7 @@ cursor.execute('''
     )
 ''')
 cursor.execute('''CREATE TABLE IF NOT EXISTS Letters(letter  BLOB);''')
-cursor.execute('''CREATE TABLE IF NOT EXISTS Image(image BLOB,image1 BLOB);''')
+cursor.execute('''CREATE TABLE IF NOT EXISTS Image(image BLOB,image1 BLOB,Graph BLOB);''')
 # Commit the changes and close the connection
 conn.commit()
 conn.close()
